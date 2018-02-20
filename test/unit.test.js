@@ -1,11 +1,14 @@
 const { describe, it } = require('mocha');
-
 const { expect } = require('chai');
 
-const server = require('../src/index.js');
+const { API_URL } = require('../src/utils');
 
-describe('server', () => {
-  it ('exists', () =>{
-    expect(server).to.exist;
+describe('API_URL', () => {
+  it ('has correct url', () => {
+    if (process.env.NODE_ENV === 'production') {
+      expect(API_URL).to.not.equal('http://localhost:3030');
+    } else {
+      expect(API_URL).to.deep.equal('http://localhost:3030');
+    }
   });
 });

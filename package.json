@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p --config ./webpack.config.js",
-    "test": "mocha --recursive"
+    "test": "mocha --recursive --require babel-core/register"
   },
   "author": "Kane Labs",
   "license": "ISC",
