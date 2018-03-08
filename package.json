@@ -2,7 +2,7 @@
   "name": "react-redux-async-starter",
   "version": "0.0.1",
   "description": "React, Redux, w/ Async, React-Router, ES7+, Webpack, Babel",
-  "main": "src/index.jsx",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p --config ./webpack.config.js",
